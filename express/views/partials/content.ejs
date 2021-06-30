@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <% for(let hero of heroes) { %>
+        <div class="card">
+            <div class="card-header">
+                <a href="/heroes/<%= hero.id %>" class="card-title">
+                    <%= hero.name %>
+                </a>
+            </div>
+
+            <div class="card-body">
+                <a href="/heroes/<%= hero.id %>">
+                    <img src="/images/<%= hero.image %>" width="972px" height="574px" />
+                </a>
+            </div>
+        </div>
+        <% } %>
+</div>
